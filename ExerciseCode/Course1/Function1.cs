@@ -1,28 +1,34 @@
-﻿using System;
+﻿using ExerciseCode.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
-namespace ExerciseCode.Course1
+namespace ExerciseCode
 {
     /// <summary>
     ///  有n支棒子，棒子i的長度是ai。
     ///  您想從這些棒子中選出三支來做出周長最長的三角形。
     ///  請求出能夠做出的最大周長。如果無法做出三角形時請輸出0。
     /// </summary>
-    public class Function1
+    public class Function1: IFunction
     {
-        private static int stickNum;
-        private static int[] sticksLength;
+        private int stickNum;
+        private int[] sticksLength;
 
         public Function1()
         {
 
         }
 
-        public void setData(int[] val)
+        /// <summary>
+        /// 設定參數
+        /// </summary>
+        /// <param name="sticksLength">每隻竿子長度</param>
+        public void setData(int[] sticksLength)
         {
-            stickNum = val.Length;
-            sticksLength = val;
+            this.stickNum = sticksLength.Length;
+            this.sticksLength = sticksLength;
         }
 
         /// <summary>
@@ -31,6 +37,8 @@ namespace ExerciseCode.Course1
         public void solve1()
         {
             Console.Write("solve1 : ");
+            var sw = new Stopwatch();
+            sw.Start();
 
             if (hasData()) return;
 
@@ -55,13 +63,15 @@ namespace ExerciseCode.Course1
                 }
             }
 
+            sw.Stop();
+
             if (getPerimeter(amax) > 0)
             {
-                Console.WriteLine($"{getPerimeter(amax)} 三角形三邊長為 : {amax[0]}, {amax[1]}, {amax[2]}");
+                Console.WriteLine($"{getPerimeter(amax)} 三角形三邊長為 : {amax[0]}, {amax[1]}, {amax[2]}  \t time:{sw.ElapsedMilliseconds}");
             }
             else
             {
-                Console.WriteLine($"{getPerimeter(amax)} 無法成為三角形");
+                Console.WriteLine($"{getPerimeter(amax)} 無法成為三角形  \t time:{sw.ElapsedMilliseconds}");
             }
         }
 
@@ -91,6 +101,9 @@ namespace ExerciseCode.Course1
         {
             Console.Write("solve2 : ");
 
+            var sw = new Stopwatch();
+            sw.Start();
+
             if (hasData()) return;
 
             var ans = 0;
@@ -111,7 +124,9 @@ namespace ExerciseCode.Course1
                 }
             }
 
-            Console.WriteLine($"{ans}");
+            sw.Stop();
+
+            Console.WriteLine($"{ans} \t time:{sw.ElapsedMilliseconds}");
         }
 
         private int getMax(int a1, int a2, int a3)
