@@ -1,4 +1,5 @@
 ﻿using ExerciseCode;
+using ExerciseCode.Course1;
 using System;
 
 namespace ExerciseCode
@@ -7,7 +8,7 @@ namespace ExerciseCode
     {
         static void Main(string[] args)
         {
-            var fun = new Function2();
+            var fun = new Function3();
             fun.test();
            
         }
