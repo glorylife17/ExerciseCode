@@ -27,39 +27,51 @@ namespace ExerciseCode.Course2
 
         public void solve1()
         {
-            Console.Write("solve1 :\n");
+            Console.Write("solve1 :");
             var sw = new Stopwatch();
             sw.Start();
 
-            addValue(0, 0);
+           
             
             sw.Stop();
         }
 
-        private int addValue(int num, int sum)
+        /// <summary>
+        /// DepthFirstSearch 深度優先搜尋
+        /// </summary>
+        /// <param name="num"></param>
+        /// <param name="sum"></param>
+        /// <returns></returns>
+        private bool search(int num, int sum)
         {
-            if (num >= this.numbers.Length) return 0;
+            if (num == this.numbers.Length) return sum == this.selectedNumber;
 
-            var ans = this.numbers[num];
-            for (int i = num; i < this.numbers.Length; i++)
-            {
-                if (i + 1 < this.numbers.Length)
-                    ans += addValue(i + 1, ans);
-                Console.WriteLine($"n:[{num}] i:{i}  => {this.numbers[i]}");
-            }
+            if (search(num + 1, sum)) return true;
 
-            return sum + ans;
+            if (search(num + 1, sum + this.numbers[num])) return true ;
+
+            return false;
          }
 
         public void solve2()
         {
-           
+            Console.Write("solve2 :");
+            var sw = new Stopwatch();
+            sw.Start();
+
+            if (search(0, 0))
+                Console.WriteLine($"{this.selectedNumber} 的和，[有]在此矩陣中 \t time:{sw.ElapsedMilliseconds}");
+            else
+                Console.WriteLine($"{this.selectedNumber} 的和，[不]在此矩陣中 \t time:{sw.ElapsedMilliseconds}");
+
+            sw.Stop();
         }
 
         public void test()
         {
             setData(new int[] { 1, 2, 4, 7 }, 13);
             solve1();
+            solve2();
         }
     }
 }
