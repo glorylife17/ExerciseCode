@@ -6,7 +6,7 @@ namespace ExerciseCode
     {
         static void Main(string[] args)
         {
-            var fun = new Course2.Function3();
+            var fun = new Course2.Function4();
             fun.test();
            
         }
