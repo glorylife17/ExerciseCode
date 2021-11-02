@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
-namespace ExerciseCode
+namespace ExerciseCode.Course1
 {
     /// <summary>
     /// n只螞蟻以每秒1cm的速度在長為Lcm的竿子上爬行。當螞蟻爬到竿子的端點時就會掉落。

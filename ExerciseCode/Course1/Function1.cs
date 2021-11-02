@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace ExerciseCode
+namespace ExerciseCode.Course1
 {
     /// <summary>
     ///  有n支棒子，棒子i的長度是ai。
