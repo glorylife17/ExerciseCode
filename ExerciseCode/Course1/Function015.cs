@@ -7,16 +7,17 @@ using System.Text;
 namespace ExerciseCode.Course1
 {
     /// <summary>
+    /// 三角形
     ///  有n支棒子，棒子i的長度是ai。
     ///  您想從這些棒子中選出三支來做出周長最長的三角形。
     ///  請求出能夠做出的最大周長。如果無法做出三角形時請輸出0。
     /// </summary>
-    public class Function1: IFunction
+    public class Function015: IFunction
     {
         private int stickNum;
         private int[] sticksLength;
 
-        public Function1()
+        public Function015()
         {
 
         }

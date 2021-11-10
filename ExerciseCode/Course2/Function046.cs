@@ -8,12 +8,13 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
+    /// Saruman's Army (POJ 3069)
     /// 直線上有N個點，點i的位置是Xi。從這N個點中選擇若幹個，給它們加上標記。
     /// 對每一個點，其距離為R以內的區域里必須有帶有標記的點
     /// (自己本身帶有標記的點，可以認為其與距離為0的地方有一個帶有標記的點)。
     /// 在滿足這個條件的情況下，希望能為盡可能少的點添加標記。請問至少要有多少點被加上標記？
     /// </summary>
-    class Function8 : IFunction
+    class Function046 : IFunction
     {
         private int range;
         private int[] points;

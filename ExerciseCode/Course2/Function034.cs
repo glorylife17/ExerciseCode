@@ -15,7 +15,7 @@ namespace ExerciseCode.Course2
     /// 試求出起點到終點的最小步數。
     /// （本題假定迷宮是有解的）(N,M<=100)
     /// </summary>
-    class Function4 : IFunction
+    class Function034 : IFunction
     {
         private int width, height;
         private string[,] maze;

@@ -8,11 +8,12 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
+    /// 行程規畫問題
     /// 有 n 件工作。各工作分別由時間 Si 開始，並於時間 Ti 結束。
     /// 你一定要選擇是參加各項工作。
     /// 如果參加了就一定要全程，另外參加之工作時間不能重疊。
     /// </summary>
-    class Function6 : IFunction
+    class Function041 : IFunction
     {
         private List<Job> jobs;
         private Dictionary<int, int> jobsMaxNumber;

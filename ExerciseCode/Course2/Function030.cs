@@ -7,9 +7,10 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
+    /// 部分和問題
     /// 給定整數a1、a2、.......an，判斷是否可以從中選出若干數，使它們的和恰好為k。
     /// </summary>
-    class Function2 : IFunction
+    class Function030 : IFunction
     {
         private int[] numbers;
         private int selectedNumber;

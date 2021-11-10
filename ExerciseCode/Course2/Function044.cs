@@ -8,11 +8,12 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
+    /// Best Cow Line (POJ 3617)
     /// 給定 N 個字完的字串 S ，並建立 N 個字元的字串 T ，
     /// 然後它從 S 的開頭或尾端刪除一個字元，並將之新增至 T 尾端，
     /// 並使 T 以字典排序儘可能地小。
     /// </summary>
-    class Function7 : IFunction
+    class Function044 : IFunction
     {
         private string soure = "";
 

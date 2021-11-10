@@ -9,7 +9,7 @@ namespace ExerciseCode.Course1
     /// <summary>
     /// 二分搜尋法與O(n3logn)
     /// </summary>
-    class Function3 : IFunction
+    class Function019 : IFunction
     {
         private int times;  //次數
         private int num;  //確認數字

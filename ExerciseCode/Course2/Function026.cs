@@ -7,9 +7,9 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
-    /// 費氏數列(費波那契數列)
+    /// 費氏數列(費波那契數列) & 正整數階乘
     /// </summary>
-    class Function1 : IFunction
+    class Function026 : IFunction
     {
         public void solve1()
         {

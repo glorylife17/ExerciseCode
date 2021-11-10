@@ -4,14 +4,15 @@ using ExerciseCode.Interfaces;
 
 namespace ExerciseCode.Course2
 {
-    public class Function3:IFunction
+    public class Function032:IFunction
     {
         /// <summary>
+        /// POJ 2386 Lake Counting
         /// 給予N * M大小的2維陣列，有'W'和 '.' 兩種值。
         /// W為水灘、. 句點為一般地面，而W相鄰8個方向若也有其他W，則視為同1個水灘區域。
         /// 求水灘區域有多少個。
         /// </summary>
-        public Function3()
+        public Function032()
         {
         }
 

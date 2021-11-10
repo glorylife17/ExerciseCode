@@ -7,12 +7,13 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
+    /// Fence Repair (POJ 3253)
     /// 給予一大塊木板，要切成N小塊的子木板，每個子木板有各自的Li (i = 1 ... N)長度，
     /// 每次切一刀成兩半時，需花費的成本是被切之前的長度。求切割最小的花費成本。
     /// 比如範例輸入N = 3，要的子木板長度各為8、5、8，而切第一刀之前(分成13 + 8)的長度是21，
     /// 切第二刀之前的長度是13(分成8 + 5)，所以最小的成本是21 + 13 = 34。
     /// </summary>
-    class Function9 : IFunction
+    class Function048 : IFunction
     {
         private int[] blocks;
 
