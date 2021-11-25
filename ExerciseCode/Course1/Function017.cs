@@ -8,19 +8,20 @@ using System.Text;
 namespace ExerciseCode.Course1
 {
     /// <summary>
+    /// Ants (POJ 1852)
     /// n只螞蟻以每秒1cm的速度在長為Lcm的竿子上爬行。當螞蟻爬到竿子的端點時就會掉落。
     /// 由於竿子太細，兩隻螞蟻相遇時，它們不能交錯通過，只能各自反向爬回去。
     /// 對於每隻螞蟻，我們知道它距離竿子左端的距離xi，但不知道它當前的朝向。
     /// 請計算所有螞蟻落下竿子所需的最短時間和最長時間
     /// </summary>
-    class Function2: IFunction
+    class Function017 : IFunction
     {
         private int ants;  //n隻螞蟻
         private int stickLength;  //竿子長度(Lcm)
         private int[] antsLocation;  //螞蟻位置
         private enum Direction { Left,Right};
 
-        public Function2()
+        public Function017()
         {
 
         }

@@ -8,11 +8,12 @@ using System.Text;
 namespace ExerciseCode.Course2
 {
     /// <summary>
+    /// 硬幣問題
     /// 現有硬幣六種，分別為1元、5元、10元、20元、50元、100元，
     /// 假設每種硬幣數量均無限多，
     /// 問用它們來湊夠N元有多少種組合方式。
     /// </summary>
-    class Function5 : IFunction
+    class Function040 : IFunction
     {
         private List<Coin> coins;
         private int pay;
