@@ -1,4 +1,5 @@
 ﻿using ExerciseCode.Interfaces;
+using ExerciseCode.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,12 +20,12 @@ namespace ExerciseCode.Course2
     {
         private int width, height;
         private string[,] maze;
-        private Point startPoint;
-        private Point endPoint;
+        private PointModel startPoint;
+        private PointModel endPoint;
         private int maxStep;
         private int INF = 100000000;
         private int[,] distances;
-        private Queue<Point> que;
+        private Queue<PointModel> que;
         private int[] ax = new int[] { 0, -1, 0, 1 };
         private int[] ay = new int[] { -1, 0, 1, 0 };
         private void setData()
@@ -106,18 +107,18 @@ namespace ExerciseCode.Course2
             return false;
         }
 
-        private Point findPoint(string point)
+        private PointModel findPoint(string point)
         {
             for (int i = 0; i < this.height; i++)
             {
                 for (int j = 0; j < this.width; j++)
                 {
                     if (this.maze[i, j] == point)
-                        return new Point(j, i);
+                        return new PointModel(j, i);
                 }
             }
 
-            return new Point(0, 0);
+            return new PointModel(0, 0);
         }
 
         public void solve2()
@@ -136,7 +137,7 @@ namespace ExerciseCode.Course2
 
         private int getMatrixSetp()
         {
-            que = new Queue<Point>();
+            que = new Queue<PointModel>();
             distances = new int[this.height, this.width];
 
             for (int i = 0; i < this.height; i++)
@@ -162,7 +163,7 @@ namespace ExerciseCode.Course2
                     if (0 <= dx && dx < this.width && 0 <= dy && dy < this.height
                         && this.maze[dy, dx] != "#" && this.distances[dy, dx] == INF)
                     {
-                        que.Enqueue(new Point(dx, dy));
+                        que.Enqueue(new PointModel(dx, dy));
                         distances[dy, dx] = distances[p.y, p.x] + 1;
                     }
                 }
@@ -210,23 +211,6 @@ namespace ExerciseCode.Course2
 
             Console.WriteLine();
             //showData();
-        }
-    }
-
-    public class Point
-    {
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
-
-        public int x{ get; set; }
-        public int y{ get; set; }
-
-        public override string ToString()
-        {
-            return $"({this.x},{this.y})";
         }
     }
 }
