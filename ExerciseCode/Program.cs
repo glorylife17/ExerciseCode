@@ -6,9 +6,8 @@ namespace ExerciseCode
     {
         static void Main(string[] args)
         {
-            var fun = new Course2.Function060();
-            fun.test();
-           
+            new LeetCode.HappyNumber().test();
+            new LeetCode.SingleNumber().test();
         }
     }
 }
