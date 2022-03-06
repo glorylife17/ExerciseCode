@@ -8,6 +8,7 @@ namespace ExerciseCode
         {
             new LeetCode.HappyNumber().test();
             new LeetCode.SingleNumber().test();
+            new LeetCode.MaximunSubarray().test();
         }
     }
 }
