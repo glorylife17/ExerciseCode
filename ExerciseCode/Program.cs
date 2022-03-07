@@ -6,9 +6,10 @@ namespace ExerciseCode
     {
         static void Main(string[] args)
         {
-            new LeetCode.HappyNumber().test();
             new LeetCode.SingleNumber().test();
+            new LeetCode.HappyNumber().test();
             new LeetCode.MaximunSubarray().test();
+            new LeetCode.MoveZeroes().test();
         }
     }
 }
