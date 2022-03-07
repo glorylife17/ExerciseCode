@@ -34,7 +34,7 @@ namespace ExerciseCode.LeetCode
 
         public void solve2()
         {
-            var input = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 14 };
+            var input = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
             var num1 = getMaxNumber1(input);
 
             Console.WriteLine($"[{string.Join(", ", input)}]");
