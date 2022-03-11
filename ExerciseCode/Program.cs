@@ -16,9 +16,9 @@ namespace ExerciseCode
             //new LeetCode.GroupAnagrams().test();
 
             //new LeetCode.CountingElements().test();
-            new LeetCode.MergeTwoSortedLists().test();
+            //new LeetCode.MergeTwoSortedLists().test();
+            new LeetCode.MiddleOfTheLinkedList().test();
 
-           
         }
 
       
