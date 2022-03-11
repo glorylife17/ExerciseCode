@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ExerciseCode
 {
@@ -14,8 +15,12 @@ namespace ExerciseCode
             //new LeetCode.Decimal10To7().test();
             //new LeetCode.GroupAnagrams().test();
 
-            new LeetCode.CountingElements().test();
+            //new LeetCode.CountingElements().test();
+            new LeetCode.MergeTwoSortedLists().test();
+
+           
         }
 
+      
     }
 }
