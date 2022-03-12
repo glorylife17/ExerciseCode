@@ -9,7 +9,7 @@ namespace ExerciseCode.LeetCode
     {
         public void solve1()
         {
-            var isSame1 = compareString("ab#c", "ad#vv##c");
+            var isSame1 = compareString("ab#c", "ad#c");
             Console.WriteLine($"LeetCode ab#c == ad#c: {isSame1}");
 
         }
@@ -24,7 +24,7 @@ namespace ExerciseCode.LeetCode
         private string breakspace(string str1)
         {
             var res = "";
-
+           
             for (int i = 0; i < str1.Length; i++)
             {
                 if(str1[i]!='#')
