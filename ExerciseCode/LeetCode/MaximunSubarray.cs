@@ -32,13 +32,34 @@ namespace ExerciseCode.LeetCode
             return max;
         }
 
+        private int getMaxNumber2(int[] arr)
+        {
+            var max = int.MinValue;
+            var sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+                if (sum > max)
+                {
+                    max = sum;
+                }
+
+                if (sum < 0) sum = 0;
+            }
+
+            return max;
+        }
+
         public void solve2()
         {
             var input = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-            var num1 = getMaxNumber1(input);
-
             Console.WriteLine($"[{string.Join(", ", input)}]");
+
+            var num1 = getMaxNumber1(input);
             Console.WriteLine($"max number(fun1) : {num1}");
+
+            var num2 = getMaxNumber2(input);
+            Console.WriteLine($"max number(fun2) : {num2}");
         }
 
         public void test()

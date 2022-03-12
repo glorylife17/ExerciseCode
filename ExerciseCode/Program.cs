@@ -9,7 +9,7 @@ namespace ExerciseCode
         {
             //new LeetCode.SingleNumber().test();
             //new LeetCode.HappyNumber().test();
-            //new LeetCode.MaximunSubarray().test();
+            new LeetCode.MaximunSubarray().test();
             //new LeetCode.MoveZeroes().test();
             //new LeetCode.BestTimeToBuyAndSellStock_II().test();
             //new LeetCode.Decimal10To7().test();
@@ -17,7 +17,7 @@ namespace ExerciseCode
 
             //new LeetCode.CountingElements().test();
             //new LeetCode.MergeTwoSortedLists().test();
-            new LeetCode.MiddleOfTheLinkedList().test();
+            //new LeetCode.MiddleOfTheLinkedList().test();
 
         }
 
