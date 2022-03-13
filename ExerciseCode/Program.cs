@@ -17,10 +17,10 @@ namespace ExerciseCode
             //new LeetCode.CountingElements().test();
             //new LeetCode.MergeTwoSortedLists().test();
             //new LeetCode.MiddleOfTheLinkedList().test();
-            new LeetCode.BackspaceStringCompare().test();
+            //new LeetCode.BackspaceStringCompare().test();
 
 
-            //new Knowledge.DemailCalculate();
+            new Knowledge.DemailCalculate();
 
         }
 
