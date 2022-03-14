@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Knowledge
+namespace ExerciseCode.Knowledge
 {
     class DemailCalculate
     {

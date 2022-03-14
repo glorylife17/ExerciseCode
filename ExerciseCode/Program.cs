@@ -20,8 +20,7 @@ namespace ExerciseCode
             //new LeetCode.BackspaceStringCompare().test();
 
 
-            new Knowledge.DemailCalculate();
-
+            Console.WriteLine($"{"c" == "C"}");
         }
 
       
