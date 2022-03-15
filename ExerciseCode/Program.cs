@@ -19,10 +19,8 @@ namespace ExerciseCode
             //new LeetCode.MiddleOfTheLinkedList().test();
             //new LeetCode.BackspaceStringCompare().test();
 
-
-            Console.WriteLine($"{"c" == "C"}");
+            new LeetCode.ConvertSortedArrayToBinarySearchTree().test();
         }
-
-      
+       
     }
 }
