@@ -19,8 +19,11 @@ namespace ExerciseCode
             //new LeetCode.MiddleOfTheLinkedList().test();
             //new LeetCode.BackspaceStringCompare().test();
 
-            new LeetCode.ConvertSortedArrayToBinarySearchTree().test();
-        }
-       
+            //new LeetCode.ConvertSortedArrayToBinarySearchTree().test();
+            new LeetCode.PerformStringShifts().test();
+         }
+
+    
+
     }
 }
